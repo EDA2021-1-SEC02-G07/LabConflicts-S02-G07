@@ -1,28 +1,3 @@
-"""
- * Copyright 2020, Departamento de sistemas y Computación,
- * Universidad de Los Andes
- *
- *
- * Desarrolado para el curso ISIS1225 - Estructuras de Datos y Algoritmos
- *
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along withthis program.  If not, see <http://www.gnu.org/licenses/>.
- * contribuciones:
- *
- * Dario Correal - Version inicial
- """
-
 import config as cf
 import sys
 import controller
@@ -42,7 +17,7 @@ def printMenu():
     print("Opciones:")
     print("1- Cargar Libros")
     print("2- Cargar Tags")
-    # TO-DO: Modificación de Est-1 en el Lab 2
+    print('3- Cargar Books-Tags')
     print("0- Salir")
 
 
@@ -63,7 +38,7 @@ def loadBookTags():
     """
     Cargar los Tags de libros
     """
-    # TO-DO: Modificación de Est-1 en el Lab 2
+    return controller.loadBooks('GoodReads/book_tags-small.csv')
 
 
 """
@@ -75,7 +50,7 @@ while True:
     if int(inputs[0]) == 1:
         print("Cargando información de libros....")
         books = loadBooks()
-        print('Total de libros cargados: ' + str(lt.size(books)))
+        print('Total de libros cargados: ' + str(lt.size(books-small)))
 
         # TO-DO: Modificación de Est-1 en el Lab 2
 
@@ -87,7 +62,7 @@ while True:
         tags = loadTags()
         print('Total de tags cargados: ' + str(lt.size(tags)))
     elif True:
-        # TO-DO: Modificación de Est-2 en el Lab 2
+        print('Primer libro cargado: ' + str(lt.firstElement(books-small)))
         pass
 
     else:
