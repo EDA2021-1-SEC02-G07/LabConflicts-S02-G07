@@ -37,4 +37,3 @@ def loadBooksTags(filename):
     btfile = cf.data_dir + filename
     return model.addBooksTags(btfile)
 
-"Hola mario como estás yo estoy muy cansada tengo sueño " "123"
