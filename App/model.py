@@ -52,3 +52,5 @@ def addBookTags(booktagsfile):
     return booktags
     bts = lt.newList(datastructure='SINGLE_LINKED',filename=booktagsfile)
     return bts
+
+
